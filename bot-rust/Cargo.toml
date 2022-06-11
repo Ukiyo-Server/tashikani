@@ -1,0 +1,12 @@
+[package]
+name = "tashikani-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing = "0.1.35"
+tracing-subscriber = "0.3.11"
+serenity = { version = "0.11.2", features = ["cache", "framework", "standard_framework", "rustls_backend"]}
+tokio = { version =  "1.19.2", features = ["rt-multi-thread", "macros", "signal"] }
+ureq = "2.4"
+rand = "0.8.5"
