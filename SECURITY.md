@@ -9,5 +9,3 @@ Bot is still under heavy work and unstable.
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0 Aplha   | :x: |
-
-
