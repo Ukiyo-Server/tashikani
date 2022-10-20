@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "tashikani"
+version = "0.1.0"
+description = "Tashikani is a Discord bot that helps you learn Japanese. learn new words, level your vocabulary, compete with your friends, and more."
+authors = ["Brian Wo <45139213+brainwo@users.noreply.github.com>", "Idle Boy <62786811+idleboy4038@users.noreply.github.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.81"
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+include = ["tashikani"]
+exclude = [
+    "**/__pycache__",
+]
+defineConstant = { DEBUG = true }
